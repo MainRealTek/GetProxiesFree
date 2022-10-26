@@ -43,7 +43,7 @@ class GET_PROXIES(Thread):
 					for i3 in range(self.range3,self.max_range):
 						ip_check = '{}.{}.{}.{}'.format(i0,i1,i2,i3)
 						try:
-							proxy_handler = ProxyHandler({'http':ip_check})
+							proxy_handler = ProxyHandler({'http':ip_check+':'+str(8080)})
 							opener = build_opener(proxy_handler)
 							install_opener(opener)
 							req = Request("http://www.google.com")
