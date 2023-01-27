@@ -1,3 +1,3 @@
 # GetProxiesFree
 
-Simple network scanner for search proxies 
+First version of simple network scanner for search proxies 
